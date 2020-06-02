@@ -27,6 +27,7 @@
     }
 }
 
+
 /* typography  & general styles*/
 h1,
 h2,
@@ -77,20 +78,14 @@ section + section {
     border-radius: 5px;
     margin: .5em 0;
 }
-.btn:hover {
-    transform: scale(1.1);
-    background-color: var(--clr-dark);
-    color: white;
-}
+
 /* demo and source styles */
 .btn-demo, .btn-source {
     padding: .5em 1.25em;
     border: 3px solid #6a74b7;
     color: #6a74b7;
 }
-.btn-demo:hover, .btn-source:hover{
-    background-color: #6a74b7;
-}
+
 
 /* introduction */
 #intro {
@@ -155,9 +150,7 @@ section + section {
     color: inherit;
     text-decoration: none;
 }
-.footer a:hover {
-    opacity: 0.5;
-}
+
 .social-list {
     list-style: none;
     display: flex;
@@ -168,3 +161,17 @@ section + section {
 .social-list-item {
     margin: 0 .5em;
 }
+
+@media (hover: hover) {
+    .btn:hover {
+        transform: scale(1.1);
+        background-color: var(--clr-dark);
+        color: white;
+    }
+    .btn-demo:hover, .btn-source:hover{
+        background-color: #6a74b7;
+    }
+    .footer a:hover {
+        opacity: 0.5;
+    }
+  }
